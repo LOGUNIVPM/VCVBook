@@ -1,0 +1,253 @@
+{
+  "version": "",
+  "modules": [
+    {
+      "plugin": "Fundamental",
+      "model": "SEQ3",
+      "pos": [
+        30.0,
+        0.0
+      ],
+      "params": [
+        1.5120006799697876,
+        0.0,
+        0.0,
+        8.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "data": {
+        "running": true,
+        "gates": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "gateMode": 0
+      }
+    },
+    {
+      "plugin": "ABC",
+      "model": "ADivider",
+      "pos": [
+        555.0,
+        0.0
+      ],
+      "params": []
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "Scope",
+      "pos": [
+        660.0,
+        0.0
+      ],
+      "params": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.4349794387817383,
+        0.0,
+        2.4900016784667969,
+        0.0
+      ],
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      }
+    },
+    {
+      "plugin": "Core",
+      "model": "AudioInterface",
+      "pos": [
+        960.0,
+        0.0
+      ],
+      "params": [],
+      "data": {
+        "driver": 1,
+        "device": 4,
+        "sampleRate": 44100.0,
+        "blockSize": 1024
+      }
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "ADSR",
+      "pos": [
+        195.0,
+        380.0
+      ],
+      "params": [
+        0.0,
+        0.63799995183944702,
+        0.0,
+        0.48199990391731262
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCA",
+      "pos": [
+        315.0,
+        380.0
+      ],
+      "params": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCO",
+      "pos": [
+        45.0,
+        380.0
+      ],
+      "params": [
+        1.0,
+        1.0,
+        24.624000549316406,
+        0.0,
+        0.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCO",
+      "pos": [
+        405.0,
+        380.0
+      ],
+      "params": [
+        1.0,
+        1.0,
+        8.5859994888305664,
+        0.0,
+        0.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "ADSR",
+      "pos": [
+        555.0,
+        380.0
+      ],
+      "params": [
+        0.0,
+        0.67699986696243286,
+        0.0,
+        0.59600001573562622
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCA",
+      "pos": [
+        675.0,
+        380.0
+      ],
+      "params": [
+        0.5,
+        0.5
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "outputModuleId": 0,
+      "outputId": 0,
+      "inputModuleId": 1,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 4,
+      "outputId": 0,
+      "inputModuleId": 5,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 6,
+      "outputId": 0,
+      "inputModuleId": 5,
+      "inputId": 2
+    },
+    {
+      "outputModuleId": 0,
+      "outputId": 0,
+      "inputModuleId": 4,
+      "inputId": 4
+    },
+    {
+      "outputModuleId": 5,
+      "outputId": 0,
+      "inputModuleId": 3,
+      "inputId": 1
+    },
+    {
+      "outputModuleId": 1,
+      "outputId": 1,
+      "inputModuleId": 8,
+      "inputId": 4
+    },
+    {
+      "outputModuleId": 8,
+      "outputId": 0,
+      "inputModuleId": 9,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 7,
+      "outputId": 0,
+      "inputModuleId": 9,
+      "inputId": 2
+    },
+    {
+      "outputModuleId": 9,
+      "outputId": 0,
+      "inputModuleId": 3,
+      "inputId": 0
+    }
+  ]
+}

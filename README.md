@@ -1,4 +1,6 @@
-# VCVBook
+# VCVBook - Developing Virtual Synthesizers with VCV Rack - ABC Plugin
+
+<img align="right" width="200" src="cover-small.jpg">
 This repository contains material and examples related to the book:
 "Developing Virtual Synthesizers with VCV Rack",
 edited by Focal Press.

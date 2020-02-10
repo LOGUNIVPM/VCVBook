@@ -1,0 +1,184 @@
+{
+  "slug": "ABC",
+  "name": "ABC",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": "L.Gabrielli",
+  "authorEmail": "l.gabrielli@univpm.it",
+  "authorUrl": "https://vcvrack.com/",
+  "sourceUrl": "https://github.com/VCVRack/Template",
+  "modules": [
+    {
+      "slug": "AComparator",
+      "name": "AComparator",
+      "description": "Simple comparator with binary output",
+      "tags": [
+        "Dual",
+        "Utility"
+      ]
+    },
+    {
+      "slug": "AMuxDemux",
+      "name": "AMuxDemux",
+      "description": "4-way Multiplexer + Demultiplexer",
+      "tags": [
+        "Utility"
+      ]
+    },
+    {
+      "slug": "AClock",
+      "name": "AClock",
+      "description": "Simple BPM Clock Generator",
+      "tags": [
+        "Clock Generator"
+      ]
+    },
+    {
+      "slug": "ASequencer",
+      "name": "ASequencer",
+      "description": "8-step Sequencer - 1 row of knobs",
+      "tags": [
+        "Sequencer"
+      ]
+    },
+    {
+      "slug": "ADivider",
+      "name": "ADivider",
+      "description": "Binary Clock Divider Tree",
+      "tags": [
+        "Clock modulator"
+      ]
+    },
+    {
+      "slug": "ARandom",
+      "name": "ARandom",
+      "description": "Random/Noise Generator",
+      "tags": [
+        "Random",
+        "Noise"
+      ]
+    },
+    {
+      "slug": "ALinADSR",
+      "name": "ALinADSR",
+      "description": "ADSR Envelope Generator (Lin)",
+      "tags": [
+        "Envelope generator"
+      ]
+    },
+    {
+      "slug": "AExpADSR",
+      "name": "AExpADSR",
+      "description": "ADSR Envelope Generator (Exp)",
+      "tags": [
+        "Envelope generator"
+      ]
+    },
+    {
+      "slug": "AEnvFollower",
+      "name": "AEnvFollower",
+      "description": "Envelope Follower",
+      "tags": [
+        "Envelope follower"
+      ]
+    },
+    {
+      "slug": "ASVFilter",
+      "name": "ASVFilter",
+      "description": "State Variable Filter",
+      "tags": [
+        "VCF"
+      ]
+    },
+    {
+      "slug": "APolySVFilter",
+      "name": "APolySVFilter",
+      "description": "Polyphonic State Variable Filter",
+      "tags": [
+        "VCF",
+        "Polyphonic"
+      ]
+    },
+    {
+      "slug": "AModal",
+      "name": "AModal",
+      "description": "Modal Synthesis Engine",
+      "tags": [
+        "Physical modeling"
+      ]
+    },
+    {
+      "slug": "AModalGUI",
+      "name": "AModalGUI",
+      "description": "Modal Synthesis Module with Interactive Interface",
+      "tags": [
+        "Physical modeling"
+      ]
+    },
+    {
+      "slug": "ATrivialOsc",
+      "name": "ATrivialOsc",
+      "description": "Sawtooth Oscillator using Trivial Generation and Oversampling",
+      "tags": [
+        "VCO"
+      ]
+    },
+    {
+      "slug": "ADPWOsc",
+      "name": "ADPWOsc",
+      "description": "Sawtooth Oscillator using DPW antialiasing technique",
+      "tags": [
+        "VCO"
+      ]
+    },
+    {
+      "slug": "AWavefolder",
+      "name": "AWavefolder",
+      "description": "Foldback waveshaper",
+      "tags": [
+        "Waveshaper"
+      ]
+    },
+    {
+      "slug": "APolyDPWOsc",
+      "name": "APolyDPWOsc",
+      "description": "Polyphonic Sawtooth Oscillator using DPW",
+      "tags": [
+        "VCO",
+        "Polyphonic"
+      ]
+    },
+    {
+      "slug": "APolyXpander",
+      "name": "APolyXpander",
+      "description": "Right Expander for APolyDPWOsc",
+      "tags": [
+        "Expander"
+      ]
+    },
+    {
+      "slug": "ABlankPanel",
+      "name": "ABlankPanel",
+      "description": "ABC Blank Panel",
+      "tags": [
+        "Blank"
+      ]
+    },
+    {
+      "slug": "ADelay",
+      "name": "ADelay",
+      "description": "Multi-purpose delay-line/comb tool",
+      "tags": [
+        "Delay"
+      ]
+    },
+    {
+      "slug": "ATapeDelay",
+      "name": "ATapeDelay",
+      "description": "Versatile Tape delay-line/comb tool",
+      "tags": [
+        "Delay"
+      ]
+    }
+  ]
+}
