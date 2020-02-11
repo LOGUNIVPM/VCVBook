@@ -4,10 +4,17 @@
 This repository contains material and examples related to the book:
 "Developing Virtual Synthesizers with VCV Rack",
 edited by Focal Press.
-Buy the book at:
+Find the book at:
 https://www.routledge.com/Developing-Virtual-Synthesizers-with-VCV-Rack/Gabrielli/p/book/9780367077730
 
-The ABC plugin contains all modules described in the book.
+The ABC plugin contains all modules described in the book. You will find all the instructions in the book.
+For building ABC, clone this repository and copy the ABC folder in your Rack installation "plugins" folder, i.e.:
+```
+git clone https://github.com/LOGUNIVPM/VCVBook.git
+cp -r VCVBook/ABC <myRackInstallationFolder>/plugins/
+cd <myRackInstallationFolder>/plugins/ABC/
+```
+Now you are ready to build and tweak.
 
 All material is released under a GPLv3 license, except when differently stated.
 
