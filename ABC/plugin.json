@@ -163,22 +163,6 @@
       "tags": [
         "Blank"
       ]
-    },
-    {
-      "slug": "ADelay",
-      "name": "ADelay",
-      "description": "Multi-purpose delay-line/comb tool",
-      "tags": [
-        "Delay"
-      ]
-    },
-    {
-      "slug": "ATapeDelay",
-      "name": "ATapeDelay",
-      "description": "Versatile Tape delay-line/comb tool",
-      "tags": [
-        "Delay"
-      ]
     }
   ]
 }
