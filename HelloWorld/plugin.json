@@ -1,0 +1,20 @@
+{
+    "slug": "HelloWorld",
+    "name": "HelloWorld",
+    "version": "1.0.0",
+    "license": "CC0-1.0",
+    "author": "L.Gabrielli",
+    "authorEmail": "l.gabrielli@univpm.it",
+    "authorUrl": "https://www.leonardo-gabrielli.info/vcv-book",
+    "sourceUrl": "https://github.com/LOGUNIVPM/VCVBook/",
+    "modules": [
+	    {
+		    "slug": "HelloWorld",
+		    "name": "HellowWorld",
+		    "description": "Empty Module for Demonstration Purpose",
+            "tags": [
+              "Blank"
+            ]
+	    }
+    ]
+}

@@ -5,8 +5,8 @@
   "license": "CC0-1.0",
   "author": "L.Gabrielli",
   "authorEmail": "l.gabrielli@univpm.it",
-  "authorUrl": "https://vcvrack.com/",
-  "sourceUrl": "https://github.com/VCVRack/Template",
+  "authorUrl": "https://www.leonardo-gabrielli.info/vcv-book",
+  "sourceUrl": "https://github.com/LOGUNIVPM/VCVBook/",
   "modules": [
     {
       "slug": "AComparator",
