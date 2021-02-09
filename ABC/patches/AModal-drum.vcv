@@ -1,0 +1,312 @@
+{
+  "version": "1.dev.2db08f1",
+  "modules": [
+    {
+      "id": 7,
+      "plugin": "Fundamental",
+      "version": "1.0.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 6.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 2,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        39,
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "plugin": "Core",
+      "version": "1.1.6",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 2,
+      "data": {
+        "audio": {
+          "driver": 1,
+          "deviceName": "default",
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 4096
+        }
+      },
+      "pos": [
+        62,
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "plugin": "Fundamental",
+      "version": "1.0.0",
+      "model": "VCMixer",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.45999968
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.00974834
+        },
+        {
+          "id": 3,
+          "value": 1.0
+        },
+        {
+          "id": 4,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 7,
+      "rightModuleId": 1,
+      "pos": [
+        52,
+        1
+      ]
+    },
+    {
+      "id": 15,
+      "plugin": "ABC",
+      "version": "1.0.0",
+      "model": "AModal",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.52320015
+        },
+        {
+          "id": 1,
+          "value": 0.00165009848
+        },
+        {
+          "id": 2,
+          "value": 1.28349984
+        },
+        {
+          "id": 3,
+          "value": 0.000569999975
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 18,
+      "rightModuleId": 22,
+      "data": {
+        "nActiveOsc": 16
+      },
+      "pos": [
+        12,
+        1
+      ]
+    },
+    {
+      "id": 18,
+      "plugin": "ABC",
+      "version": "1.0.0",
+      "model": "AExpADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0900000036
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 20,
+      "rightModuleId": 15,
+      "pos": [
+        6,
+        1
+      ]
+    },
+    {
+      "id": 20,
+      "plugin": "ABC",
+      "version": "1.0.0",
+      "model": "AClock",
+      "params": [
+        {
+          "id": 0,
+          "value": 120.0
+        }
+      ],
+      "rightModuleId": 18,
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 8,
+      "plugin": "Core",
+      "version": "1.1.6",
+      "model": "Notes",
+      "params": [],
+      "text": "This patch generates a rhythmical sound similar to that of a membrane.\nIt is obtained by generating short impulses with an ADSR that excite a set of 2nd order filters organized as a modal filter bank in AModal. The filters can be tuned to be inharmonic and the spectral slope parameter adjusts the amount of damping for each filter. With positive slope the higher frequencies are more damped, which is the behavior of many physical systems.  ",
+      "pos": [
+        22,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "plugin": "LOGinstruments",
+      "version": "1.0.1",
+      "model": "Speck",
+      "params": [
+        {
+          "id": 0,
+          "value": -2.0
+        },
+        {
+          "id": 1,
+          "value": -1.0
+        },
+        {
+          "id": 2,
+          "value": -2.0
+        },
+        {
+          "id": 3,
+          "value": -1.0
+        },
+        {
+          "id": 4,
+          "value": 1.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 15,
+      "data": {
+        "linLog": 0
+      },
+      "pos": [
+        18,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 15,
+      "outputModuleId": 2,
+      "outputId": 0,
+      "inputModuleId": 1,
+      "inputId": 1,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 14,
+      "outputModuleId": 2,
+      "outputId": 0,
+      "inputModuleId": 1,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 33,
+      "outputModuleId": 18,
+      "outputId": 0,
+      "inputModuleId": 15,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 35,
+      "outputModuleId": 15,
+      "outputId": 0,
+      "inputModuleId": 2,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 38,
+      "outputModuleId": 20,
+      "outputId": 0,
+      "inputModuleId": 18,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 39,
+      "outputModuleId": 15,
+      "outputId": 0,
+      "inputModuleId": 22,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 40,
+      "outputModuleId": 22,
+      "outputId": 0,
+      "inputModuleId": 7,
+      "inputId": 0,
+      "color": "#c91847"
+    }
+  ]
+}
