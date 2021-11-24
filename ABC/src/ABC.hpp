@@ -304,8 +304,12 @@ struct valueKnob : RoundBlackKnob {
 
 		ParamWidget::draw(args);
 
-		snprintf(tbuf, sizeof(tbuf), "%.3G", dirtyValue);
-		drawValue(args, tbuf);
+		engine::ParamQuantity* pq = getParamQuantity();
+		if (pq) {
+			float value = pq->getSmoothValue();
+			snprintf(tbuf, sizeof(tbuf), "%.3G", value);
+			drawValue(args, tbuf);
+		}
 
 	}
 

@@ -10,6 +10,8 @@ https://www.routledge.com/Developing-Virtual-Synthesizers-with-VCV-Rack/Gabriell
 
 The ABC plugin contains all modules described in the book. 
 
+# NOTE: The plugins are ready for RACK v2!
+
 You will find all the instructions in the book.
 For building ABC, clone this repository and copy the ABC folder in your Rack installation "plugins" folder, i.e.:
 ```
