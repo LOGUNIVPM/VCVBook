@@ -163,6 +163,14 @@
       "tags": [
         "Blank"
       ]
+    },
+    {
+      "slug": "ASimpleFilter",
+      "name": "ASimpleFilter",
+      "description": "LPF",
+      "tags": [
+        "VCF"
+      ]
     }
   ]
 }

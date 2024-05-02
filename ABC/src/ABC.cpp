@@ -41,4 +41,7 @@ void init(rack::Plugin *p) {
 	p->addModel(modelABlankPanel);
 	p->addModel(modelAPolyXpander);
 
+	p->addModel(modelASimpleFilter);
+
+
 }

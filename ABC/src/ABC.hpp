@@ -47,6 +47,9 @@ extern Model * modelATapeDelay;
 extern Model * modelABlankPanel;
 extern Model * modelAPolyXpander;
 
+extern Model * modelASimpleFilter;
+
+
 struct xpander16f {
 	float outs[16];
 };
