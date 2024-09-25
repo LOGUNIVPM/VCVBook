@@ -11,7 +11,6 @@
  *-----------------------------------------------------------------*/
 
 #include "ABC.hpp"
-#include "dsp/digital.hpp"
 #include "SVF.hpp"
 
 #define MAX_OSC 64

@@ -10,7 +10,6 @@
  *
  *-----------------------------------------------------------------*/
 
-#include "dsp/digital.hpp"
 #include "AModal.hpp"
 
 void AModal::process(const ProcessArgs &args) {

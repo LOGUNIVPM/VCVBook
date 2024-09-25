@@ -112,7 +112,7 @@ struct AStepDisplay : TransparentWidget {
 		char tbuf[2];
 
 		if (module == NULL) return;
-		snprintf(tbuf, sizeof(tbuf), "%d", module->stepNr+1);
+		snprintf(tbuf, sizeof(tbuf), "%d", (module->stepNr+1 % 8));
 
 		TransparentWidget::draw(args);
 		drawBackground(args);
