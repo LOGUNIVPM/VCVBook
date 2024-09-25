@@ -14,12 +14,6 @@
 
 using namespace rack;
 
-
-inline int factorial(int n) {
-	if (n > 1) return n * factorial(n-1);
-	else return 1;
-}
-
 typedef enum {
 	DPW_1 = 1,
 	DPW_2 = 2,

@@ -43,5 +43,8 @@ void init(rack::Plugin *p) {
 
 	p->addModel(modelASimpleFilter);
 
+	p->addModel(modelADirac);
+	p->addModel(modelAKarplus);
+	p->addModel(modelAMultiplier);
 
 }

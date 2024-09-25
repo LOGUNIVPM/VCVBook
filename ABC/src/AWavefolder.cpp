@@ -14,7 +14,7 @@
 #include "dsp/digital.hpp"
 
 #define WF_THRESHOLD (0.7f)
-#define SMALL_NUMERIC_TH (1e-30f)
+#define SMALL_NUMERIC_TH (1e-6f)
 #define EXERCISE_2
 
 template <typename T> int inline sign(T val) {
@@ -46,8 +46,8 @@ struct AWavefolder : Module {
 		NUM_LIGHTS,
 	};
 
-	double mu, musqr;
-	double Fn1, xn1;
+	float mu, musqr;
+	float Fn1, xn1;
 	bool antialias = true;
 
 	AWavefolder() {
@@ -71,9 +71,9 @@ struct AWavefolder : Module {
 
 void AWavefolder::process(const ProcessArgs &args) {
 
-	double offset =  params[PARAM_OFFSET_CV].getValue() * inputs[OFFSET_IN].getVoltage() / 10.0 + params[PARAM_OFFSET].getValue();
-	double gain = params[PARAM_GAIN_CV].getValue() * inputs[GAIN_IN].getVoltage() / 10.0 + params[PARAM_GAIN].getValue();
-	double out, x, z;
+	float offset =  params[PARAM_OFFSET_CV].getValue() * inputs[OFFSET_IN].getVoltage() / 10.0 + params[PARAM_OFFSET].getValue();
+	float gain = params[PARAM_GAIN_CV].getValue() * inputs[GAIN_IN].getVoltage() / 10.0 + params[PARAM_GAIN].getValue();
+	float out, x, z;
 
 	x = z = out = gain * inputs[MAIN_IN].getVoltage() + offset;
 
@@ -127,26 +127,26 @@ AWavefolderWidget::AWavefolderWidget(AWavefolder * module) {
 	}
 
 	{
-		ATextHeading * title = new ATextHeading(Vec(18, 30));
-		title->setText("IN GAIN");
-		addChild(title);
+		ATextHeading * hd = new ATextHeading(Vec(18, 30));
+		hd->setText("IN GAIN");
+		addChild(hd);
 	}
 	{
-		ATextHeading * title = new ATextHeading(Vec(20, 140));
-		title->setText("OFFSET");
-		addChild(title);
-	}
-
-	{
-		ATextLabel * title = new ATextLabel(Vec(17, 250));
-		title->setText("IN");
-		addChild(title);
+		ATextHeading * hd = new ATextHeading(Vec(20, 140));
+		hd->setText("OFFSET");
+		addChild(hd);
 	}
 
 	{
-		ATextLabel * title = new ATextLabel(Vec(50, 250));
-		title->setText("OUT");
-		addChild(title);
+		ATextLabel * lbl = new ATextLabel(Vec(17, 250));
+		lbl->setText("IN");
+		addChild(lbl);
+	}
+
+	{
+		ATextLabel * lbl = new ATextLabel(Vec(50, 250));
+		lbl->setText("OUT");
+		addChild(lbl);
 	}
 
 	addInput(createInput<PJ301MPort>(Vec(15, 290), module, AWavefolder::MAIN_IN));

@@ -49,10 +49,25 @@ extern Model * modelAPolyXpander;
 
 extern Model * modelASimpleFilter;
 
+extern Model * modelADirac;
+extern Model * modelAKarplus;
+extern Model * modelAMultiplier;
+
 
 struct xpander16f {
 	float outs[16];
 };
+
+
+////////////////////
+// math stuff
+////////////////////
+
+inline int factorial(int n) {
+	if (n > 1) return n * factorial(n-1);
+	else return 1;
+}
+
 
 ////////////////////
 // Additional GUI stuff

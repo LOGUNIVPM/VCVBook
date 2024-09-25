@@ -1,0 +1,74 @@
+/*
+ * TEMPLATE C++ FILE TO ADD A MODULE TO THE ABC PLUGINS
+ */
+#include "ABC.hpp"
+
+/* EDIT AND MOVE THE FOLLOWING TO ABC.cpp */
+p->addModel(createModel<ATemplateWidget>("ABC", "ATemplate1", "ATemplate", DIGITAL_TAG));
+
+
+/* EDIT AND MOVE THE FOLLOWING TO ABC.hpp */
+struct ATemplateWidget : ModuleWidget {
+	ATemplateWidget();
+};
+
+/* EDIT ALL THE REST OF THE FILE */
+struct ATemplate : Module {
+	enum ParamIds {
+		NUM_PARAMS,
+	};
+
+	enum InputIds {
+		NUM_INPUTS,
+	};
+
+	enum OutputIds {
+		NUM_OUTPUTS,
+	};
+
+	enum LightsIds {
+		NUM_LIGHTS,
+	};
+
+	ATemplate() {
+		config(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS, NUM_LIGHTS);}
+
+	void process(const ProcessArgs &args) override;
+
+};
+
+void ATemplate::process(const ProcessArgs &args) {
+	;
+}
+
+ATemplateWidget::ATemplateWidget() {
+	ATemplate *module = new ATemplate();
+
+	setModule(module);
+
+	box.size = Vec(15*6, 380);
+
+	{
+		SVGPanel *panel = new SVGPanel();
+		panel->box.size = box.size;
+		panel->setBackground(APP->window->loadSvg(asset::plugin(plugin, "res/ATemplate.svg")));
+		addChild(panel);
+	}
+
+	/* SOME EXAMPLES OF WIDGETS TO ADD
+	addInput(createInput<PJ301MPort>(Vec(10, 10), module, ATemplate::YOUR_INPUT_ENUM_ID));
+
+	addOutput(createOutput<PJ3410Port>(Vec(20, 20), module, ATemplate::YOUR_OUTPUT_ENUM_ID));
+
+	addParam(createParam<RoundBlackKnob>(Vec(30, 30), module, ATemplate::YOUR_PARAM_ENUM_ID, 0.0, 1.0, 0.5));
+
+	addChild(createLight<TinyLight<GreenLight>>(Vec(40, 40), module, ATemplate::YOUR_LIGHT_ENUM_ID));
+
+	{
+		ATextLabel *lab1 = new ATextLabel(Vec(50, 50));
+		lab1->setText("HELLO WORLD!");
+		addChild(lab1);
+	}
+	*/
+
+}

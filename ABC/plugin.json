@@ -171,6 +171,30 @@
       "tags": [
         "VCF"
       ]
+    },
+    {
+      "slug": "ADirac",
+      "name": "ADirac",
+      "description": "Dirac pulse generator",
+      "tags": [
+        "Utility"
+      ]
+    },
+    {
+      "slug": "AKarplus",
+      "name": "AKarplus",
+      "description": "Karplus Strong",
+      "tags": [
+        "VCO"
+      ]
+    },
+    {
+      "slug": "AMultiplier",
+      "name": "AMultiplier",
+      "description": "Multiplier/Mixer",
+      "tags": [
+        "Waveshaper"
+      ]
     }
   ]
 }
